@@ -1,2 +1,4 @@
 .history
 env
+static/images
+__pycache__

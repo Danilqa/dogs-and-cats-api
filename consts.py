@@ -1,0 +1,1 @@
+IMAGE_DIRECTORY = "./static/images"
