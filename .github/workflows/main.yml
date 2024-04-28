@@ -19,7 +19,7 @@ jobs:
         run: git lfs install
 
       - name: Login to Heroku
-        uses: akhileshns/heroku-deploy@v3.12.12 # This is the Heroku deploy action
+        uses: akhileshns/heroku-deploy@v3.13.15
         with:
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           heroku_app_name: "cats-and-dogs-api"
@@ -30,4 +30,4 @@ jobs:
         run: |
           git add . -f
           git commit -m "Deploy"
-          git push heroku main --force
+          git push heroku main
